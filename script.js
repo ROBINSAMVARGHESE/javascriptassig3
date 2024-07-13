@@ -69,57 +69,73 @@ console.log(removedfruits);
 
 // 12. push
 
-const Numbers = [1,2,3,4,5,6];
-Numbers.push(7); 
+const Numbers = [1, 2, 3, 4, 5, 6];
+Numbers.push(7);
 console.log(Numbers);
 
 // 13. reverse
 
-const Numbers1 = [1,2,3,4,5,6];
-Numbers.reverse(); 
+const Numbers1 = [1, 2, 3, 4, 5, 6];
+Numbers.reverse();
 console.log(Numbers);
 
-// 14. shift
+// 14.Unshift 
+let names = ["A", "B", "C", "D"];
+let added = names.unshift("E", "F");
+console.log(names);
+
+// 15. shift
 
 let newfruit = ["Banana", "Orange", "Apple", "Mango"];
 let removedname = newfruit.shift();
 console.log(removedname);
 
-// 15. slice
+// 16. slice
 
-let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let myArray = [1, 2, 3, 4, 5, 6, 7, 8,];
 let slicedArray = myArray.slice(2, 5);
-console.log(slicedArray);  
-  
+console.log(slicedArray);
 
+// 17. some
 
-// 16. some
-// Checks if at least one element in the array satisfies a condition.
+const num = [1, 2, 3, 4, 5];
+const GreaterThanTen = numbers.some(number => number > 10);
+console.log(GreaterThanTen);
 
+// 18. sort
 
-// 17. sort
-// Sorts the elements of an array in place and returns the sorted array.
+const numb=[1,92,8,9,6,4]
+console.log(numb.sort());
 
+// 19. splice
 
-// 18. splice
-// Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+const months = ["jan", "Feb", "Mar", "Apr"];
+ months.splice(1, 2, "jun", "Jul");
+ console.log(months);
+ 
+// 20. toString
 
+let person = { name: "Alice", age: 30 ,place:"IND,Kerala,Kochi"};
+let personString = person.toString();
+console.log(personString);
 
-// 19. toString
-// Returns a string representing the specified array and its elements.
+// 21. filter
 
+const text = [1, 2, 3, 4, 5];
+const evenNumbers = text.filter(number => number % 2 === 0);
+console.log(evenNumbers); 
 
-// 20. filter
-// Creates a new array with all elements that pass the test implemented by the provided function.
-
-
-// 21. reduce
+// 22. reduce
 // Executes a reducer function on each element of the array, resulting in a single output value.
+const textsnum = [1, 2, 3, 4, 5];
+const sum = textsnum.reduce((abc,cab)=>{
+return abc+cab },0);
+console.log(sum);
 
 
-// 22. map
+// 23. map
 // Creates a new array populated with the results of calling a provided function on every element in the calling array.
 
 
-// 23. forEach
+// 24. forEach
 // Executes a provided function once for each array element.
