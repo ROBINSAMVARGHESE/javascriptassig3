@@ -1,3 +1,5 @@
+ // Array Method
+
 // 1. concat
 
 const arr1 = ['akhil', 'manu', 'ramu', 'raj']
@@ -135,7 +137,44 @@ console.log(sum);
 
 // 23. map
 // Creates a new array populated with the results of calling a provided function on every element in the calling array.
-
+const textnumb = [4, 9, 16, 25];
+const sums=textnumb.map(Math.sqrt)
+console.log(sums);
 
 // 24. forEach
 // Executes a provided function once for each array element.
+
+const numbered = [1, 2, 3, 4, 5];
+numbers.forEach(function(numbered){
+  console.log(numbered * 2);
+});
+
+
+// string method 
+
+// 1. concat
+
+// 2. includes
+let str = 'Hello World';
+console.log(str.includes('World'));
+// 3. indexOf
+// 4.lastIndexOf
+// 5.padEnd
+// 6.padStart
+// 7.repeat
+// 8.replace
+// 9.search
+// 10.slice
+// 11.split
+// 12.startsWith
+// 13.substr
+// 14.substring
+// 15.toLowerCase
+// 16.toUpperCase
+// 17.trim
+// 18.trimEnd (or trimRight)
+// 19.trimStart (or trimLeft)
+// 20.charAt
+// 21.charCodeAt
+
+
