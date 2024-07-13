@@ -1,4 +1,4 @@
- // Array Method
+// Array Method
 
 // 1. concat
 
@@ -106,18 +106,18 @@ console.log(GreaterThanTen);
 
 // 18. sort
 
-const numb=[1,92,8,9,6,4]
+const numb = [1, 92, 8, 9, 6, 4]
 console.log(numb.sort());
 
 // 19. splice
 
 const months = ["jan", "Feb", "Mar", "Apr"];
- months.splice(1, 2, "jun", "Jul");
- console.log(months);
- 
+months.splice(1, 2, "jun", "Jul");
+console.log(months);
+
 // 20. toString
 
-let person = { name: "Alice", age: 30 ,place:"IND,Kerala,Kochi"};
+let person = { name: "Alice", age: 30, place: "IND,Kerala,Kochi" };
 let personString = person.toString();
 console.log(personString);
 
@@ -125,27 +125,28 @@ console.log(personString);
 
 const text = [1, 2, 3, 4, 5];
 const evenNumbers = text.filter(number => number % 2 === 0);
-console.log(evenNumbers); 
+console.log(evenNumbers);
 
 // 22. reduce
 // Executes a reducer function on each element of the array, resulting in a single output value.
 const textsnum = [1, 2, 3, 4, 5];
-const sum = textsnum.reduce((abc,cab)=>{
-return abc+cab },0);
+const sum = textsnum.reduce((abc, cab) => {
+  return abc + cab
+}, 0);
 console.log(sum);
 
 
 // 23. map
 // Creates a new array populated with the results of calling a provided function on every element in the calling array.
 const textnumb = [4, 9, 16, 25];
-const sums=textnumb.map(Math.sqrt)
+const sums = textnumb.map(Math.sqrt)
 console.log(sums);
 
 // 24. forEach
 // Executes a provided function once for each array element.
 
 const numbered = [1, 2, 3, 4, 5];
-numbers.forEach(function(numbered){
+numbers.forEach(function (numbered) {
   console.log(numbered * 2);
 });
 
@@ -153,28 +154,94 @@ numbers.forEach(function(numbered){
 // string method 
 
 // 1. concat
+let str1 = "hello";
+let str2 = "world";
+let str3 = str1.concat(str2);
+console.log(str3);
 
 // 2. includes
 let str = 'Hello World';
 console.log(str.includes('World'));
+
 // 3. indexOf
+let word = "a,b,c,d"
+console.log(word.indexOf('d', 4));
+
 // 4.lastIndexOf
+let str6 = "hello world hello";
+console.log(str6.lastIndexOf("hello"));
+
 // 5.padEnd
+let name = "john";
+console.log(name.padEnd(8, '**'));
+
 // 6.padStart
+let colr = "red";
+console.log(colr.padStart(6, '--'));
+
 // 7.repeat
+let str4 = 'Hello';
+console.log(str1.repeat(3));
 // 8.replace
+let sentence3 = 'i can read this sentence!'
+console.log(sentence3.replace('i', 'I'));
+
 // 9.search
+let sentence1 = "the quick man jumps into the lake."
+console.log(sentence1.search('quick'));
+
 // 10.slice
+let first = 'hello world';
+let result8 = first.slice(0, 5);
+console.log(result8);
+
 // 11.split
+const text1 = "how was your day."
+const result1 = text1.split('w')
+console.log(result1);
+
 // 12.startsWith
+let world = "Hello world, welcome to the universe.";
+let result2 = world.startsWith("Hello", 1);
+console.log(result2);
+
 // 13.substr
+let text2 = "Hello world!";
+let result3 = text2.substr(1, 4);
+console.log(result3);
+
 // 14.substring
+let text3 = "Hello world!";
+let result4 = text3.substring(1, 4);
+console.log(result4);
+
 // 15.toLowerCase
+let text4 = "HELLO WORLD!";
+let result5 = text4.toLowerCase();
+console.log(result5);
+
 // 16.toUpperCase
+let text5 = "hello world!";
+let result6 = text5.toUpperCase();
+console.log(result6);
+
 // 17.trim
+let text6 = 'Quite Please';
+let result7 = text6.trim();
+console.log(result7);
+
 // 18.trimEnd (or trimRight)
+let message = 'hello welcome to the world'
+console.log(message.trimEnd());
+
 // 19.trimStart (or trimLeft)
+let message1 = 'hello welocome to the world'
+console.log(message1.trimStart());
+
 // 20.charAt
+let sentence2 = 'the quick brown fox';
+console.log(sentence2.charAt(10));
+
 // 21.charCodeAt
-
-
+let str5 = 'the quick brown fox';
+console.log(str5.charCodeAt(10));
