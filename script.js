@@ -172,23 +172,24 @@ let str6 = "hello world hello";
 console.log(str6.lastIndexOf("hello"));
 
 // 5.padEnd
-let name = "john";
+let name = "John";
 console.log(name.padEnd(8, '**'));
 
 // 6.padStart
-let colr = "red";
+let colr = "Red";
 console.log(colr.padStart(6, '--'));
 
 // 7.repeat
 let str4 = 'Hello';
 console.log(str1.repeat(3));
+
 // 8.replace
 let sentence3 = 'i can read this sentence!'
 console.log(sentence3.replace('i', 'I'));
 
 // 9.search
-let sentence1 = "the quick man jumps into the lake."
-console.log(sentence1.search('quick'));
+let sentence1 = "she is my friend"
+console.log(sentence1.search('ismy'));
 
 // 10.slice
 let first = 'hello world';
